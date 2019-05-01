@@ -1,0 +1,107 @@
+/* Mobile First Layout - min-width: 375px */
+/* Global Elements */
+a {  text-decoration: none; color: #fff; background-color: inherit; }
+.attribution {  font-size: 11px; }
+.attribution__link {  color: #222e5b; background-color: inherit; }
+
+body {
+  background-color: #674BAF;
+  background-image: url('images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {  font-family: 'Poppins', sans-serif; font-weight: 600; margin-bottom: 0; }
+
+/* Header */
+.site-header {  padding: 7% 5%; text-align: left; }
+
+/* Main Content */
+.main-content {  margin: 2%; padding: 2%; }
+
+.main-content__btn {
+  background-color: #fff;
+  color: #674BAF;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #323232;
+  padding: 2% 10%;
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content__image {  width: 80%; height: 80%; }
+.main-content__intro {  margin: 5% 5% 10%; }
+
+/* Footer */
+.site-footer {  padding: 7% 5% 2%; }
+
+.social__link {
+  margin-right: 1%;
+  border: 1px solid #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Responsive Layout - scaled up */
+/* iPad and Similar Screens */
+@media screen and (min-width: 768px) {
+  .attribution {  font-size: 14px; }
+  .header-logo {  width: 60%; }
+  .main-content__btn {  font-size: 1.5em; }
+  .main-content__image {  width: 100%; }
+  .main-content__intro {  font-size: 1.75em; }
+  .main-content__title {  font-size: 2.5em; }
+  .social__link {  line-height: 3rem; width: 3rem; height: 3rem; font-size: 1.25rem; }
+}
+
+/* iPad Pro and Similar Screens */
+@media screen and (min-width: 1024px) {
+  .attribution {  font-size: 18px; }
+  .header-logo {  width: 50%; }
+  .main-content__btn {  font-size: 2.5em; }
+  .main-content__image {  width: 100%; }
+  .main-content__intro {  font-size: 2.75em; margin-left: 0; margin-right: 0; }
+  .main-content__title {  font-size: 3.5em; }
+  .social__link {  line-height: 5rem; width: 5rem; height: 5rem; font-size: 2.25rem; }
+}
+
+/* Laptop/Desktop and Similar Screens */
+@media screen and (min-width: 1200px) {
+  .attribution { font-size: 11px; grid-column: 1; grid-row: 1; }
+
+  body {
+    background-image: url('images/bg-desktop.svg');
+    background-size: 90%;
+    background-position: -20% 55%;
+  }
+
+  .header-logo {  width: 15%;  }
+  .main-content {  display: grid; grid-template-columns: 60% 40%; margin: 2%; padding: 0; }
+  .main-content__btn {  width: 50%; font-size: 1em; }
+  .main-content__image {  width: 90%; }
+  .main-content__intro {  font-size: 1em; }
+  .main-content__title {  font-size: 2.5em; }
+  .section-left {  margin-right: 4%; grid-column: 1; }
+  .section-right {  text-align: left; }
+
+  .site-footer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: right;
+    padding: 0 2%;
+  }
+
+  .site-header { padding: 2% 5%; margin: 0; }
+  .social { grid-column: 2; }
+  .social__link {  line-height: 2rem; width: 2rem; height: 2rem; font-size: 1rem; }
+}
